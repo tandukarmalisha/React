@@ -6,12 +6,13 @@ const form = () => {
  }
     return (
     <div>
-        <pre>
         <h1>Please fill the following informations:</h1>
-        <label id="name">Name:</label><input type="text" /><br />
-        <label id="age">Age:</label> <input type="number" /> <br />
-        <button onClick="ShowAlert">Submit</button>
-        </pre>
+        <form onSubmit={ShowAlert}>
+        <label id="name" >Name:</label><input type="text" required/><br />
+        <label id="age" >Age:</label> <input type="number" required/> <br />
+        <label id="email">E-mail:</label><input type="text" required /><br />
+        <button>Submit</button>
+        </form>
     </div>
   )
 }
