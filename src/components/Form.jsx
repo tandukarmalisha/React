@@ -1,7 +1,8 @@
 import React from 'react'
 
 const form = () => {
- const ShowAlert = () =>{
+ const ShowAlert = (e) =>{
+    e.preventDefault();
     alert("Form submitted")
  }
     return (
