@@ -2,6 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   const showAlert = () =>{
+    e.preventDefault();
     alert("Button clicked")
   }
     return (
